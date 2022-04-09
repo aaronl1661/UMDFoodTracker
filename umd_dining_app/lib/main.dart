@@ -1,6 +1,35 @@
 import 'package:flutter/material.dart';
+import 'package:quantity_input/quantity_input.dart';
 
 const primaryColor = Color.fromARGB(255, 212, 22, 22);
+List<Food> list1 = [
+  Food(1, "banana", "Macrussy"),
+  Food(2, "test1", "Macrussy"),
+  Food(3, "test2", "Macrussy"),
+  Food(4, "test3", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+  Food(5, "test4", "Macrussy"),
+];
+int index = 0;
 void main() {
   runApp(MaterialApp(
       title: 'UMD Dining App',
@@ -71,6 +100,8 @@ class NorthDiner extends StatefulWidget {
 
 class _NorthDinerState extends State<NorthDiner> {
   @override
+  int simpleIntInput = 0;
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -161,82 +192,49 @@ class Food {
 Widget _myListView(BuildContext context) {
   // add another parameter as the dataset
   // backing data
-  List<Food> list1 = [
-    Food(1, "banana", "Macrussy"),
-    Food(2, "test1", "Macrussy"),
-    Food(3, "test2", "Macrussy"),
-    Food(4, "test3", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-    Food(5, "test4", "Macrussy"),
-  ];
 
   return ListView.builder(
     itemCount: list1.length,
     itemBuilder: (context, index) {
       return Row(children: <Widget>[
-        Expanded(
-          flex: 2,
-          child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                list1[index].name,
-              )),
-        ),
-        Expanded(
-          flex: 2,
-          child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                list1[index].calorie.toString(),
-              )),
-        ),
-        Expanded(
-          flex: 2,
-          child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                list1[index].text,
-              )),
-        ),
-        Expanded(
-          flex: 2,
-          child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                list1[index].quantity.toString(),
-              )),
-        ),
-        Expanded(
-            flex: 2,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: ElevatedButton(
-                child: const Text('+'),
-                onPressed: () {
-                  list1[index].quantity++;
-                },
-              ),
-            ))
+        Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Text(
+              list1[index].name,
+            )),
+        Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Text(
+              list1[index].calorie.toString(),
+            )),
+        Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Text(
+              list1[index].text,
+            )),
+        Padding(padding: const EdgeInsets.all(5.0), child: QuantityWidget())
       ]);
     },
   );
+}
+
+class QuantityWidget extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => QuantityWidgetState();
+}
+
+class QuantityWidgetState extends State<QuantityWidget> {
+  @override
+  var simpleIntInput = 0;
+  Widget build(BuildContext context) {
+    return Center(
+        child: Column(mainAxisSize: MainAxisSize.min, children: [
+      QuantityInput(
+          value: simpleIntInput,
+          onChanged: (value) => setState(() {
+                simpleIntInput = int.parse(value.replaceAll(',', ''));
+                list1[index].quantity++;
+              })),
+    ]));
+  }
 }
