@@ -1,12 +1,11 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
-
-
-
+from selenium.webdriver.chrome.options import Options
 import time
 import sys
 import csv
+
 
 # South, 251, Diner
 dinerSelectionXPaths = ['/html/body/center/table[2]/tbody/tr/td[1]/table/tbody/tr[1]/td/table/tbody/tr[1]/td[1]/table/tbody/tr/td[2]/table/tbody/tr[1]/td/span/a',
@@ -24,7 +23,9 @@ north251Items = {}
 dinerItems = {}
 
 # ----------------------------------------------------------------------------------------------------------------------------------------------------------
-driver = webdriver.Chrome()
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+driver = webdriver.Chrome(options=chrome_options)
 driver.get("https://nutrition.umd.edu/")
 
 # large for loop - for 3 diners
@@ -39,6 +40,7 @@ for iteration, dinerLink in enumerate(dinerSelectionXPaths):
         
         try:
             mealType = driver.find_element_by_xpath(mealTypeXPaths[number]).text 
+            print(mealType)
             element = driver.find_element_by_xpath(mealLink)
             element.click()
         except NoSuchElementException:
@@ -138,8 +140,10 @@ def writeToCsv(dict_data, name):
             writerfile.writerow(csv_columns)
             for key, value in dict_data.items():
                 writerfile.writerow([key, value[0], value[1], value[2], value[3], value[4], value[5], value[6], value[7]])
-                
+
+            
             outfile.close()
+
 
     except IOError:
         print("I/O error")
