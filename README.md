@@ -1,15 +1,19 @@
-# UkraineMapping
+UMD Food Tracker
 
-https://www.reddit.com/r/UkraineWarVideoReport/
+Scraping 
+1. goes to https://nutrition.umd.edu/
+2. goes to each of the diners (South, 251, Diner)
+3. click on each meal (breakfast, lunch, dinner) if present
+4. enter 1 for each food item
+5. generate food report and store all values into a dictionary
+6. Will run once daily to grab all menu items for that day
 
-https://www.reddit.com/r/UkrainianConflict/
 
-https://www.reddit.com/r/CombatFootage/
 
-https://www.reddit.com/r/ukraine/
 
-STEPS:
-1. Scrape reddit for imgs/ videos
-2. sort into a dataset
-3. create web gui
-4. link the two
+
+
+
+Phone Application
+1.
+
