@@ -6,7 +6,8 @@ import 'dart:io';
 
 const primaryColor = Color.fromARGB(255, 212, 22, 22);
 List<List<dynamic>> _data = [];
-int index = 0;
+List<int> quantity = [];
+List<dynamic> totalNutrition = [];
 void main() {
   runApp(MaterialApp(
       title: 'UMD Dining App',
@@ -26,7 +27,7 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   void _loadCSV() async {
-    final _rawData = await rootBundle.loadString("assets/Diner.csv");
+    final _rawData = await rootBundle.loadString("assets/Dinersorted.csv");
     List<List<dynamic>> _listData =
         const CsvToListConverter().convert(_rawData);
     setState(() {
@@ -41,6 +42,9 @@ class _MainPageState extends State<MainPage> {
       sleep(const Duration(seconds: 5));
       print("loading....");
     }
+    for (int i = 0; i < _data.length; i++) {
+      quantity.add(0);
+    }
     return Scaffold(
         appBar: AppBar(
           title: const Text(
@@ -50,7 +54,7 @@ class _MainPageState extends State<MainPage> {
         ),
         body: Center(
             child: SizedBox(
-          height: 120,
+          height: 300,
           width: 100,
           child: Column(children: [
             ElevatedButton(
@@ -104,7 +108,71 @@ class _NorthDinerState extends State<NorthDiner> {
         title: const Text('North Diner'),
       ),
       body: BodyLayout(),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.check),
+        onPressed: () {
+          for (int i = 0; i < _data.length; i++) {
+            totalNutrition.add(0);
+          }
+          for (int i = 1; i < _data.length; i++) {
+            if (quantity[i] != 0) {
+              print("entered");
+              for (int j = 0; j < _data[i].length; j++) {
+                if (j == 2 || j == 3 || j == 4 || j == 5 || j == 8) {
+                  totalNutrition[j] += (_data[i][j] * quantity[i]);
+                }
+              }
+            }
+          }
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => TotalCalorie()),
+          );
+        },
+      ),
     );
+  }
+}
+
+class TotalCalorie extends StatefulWidget {
+  @override
+  State<TotalCalorie> createState() => _TotalCalorieState();
+}
+
+class _TotalCalorieState extends State<TotalCalorie> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(title: const Text('Total Calorie')),
+        body: Center(
+            child:
+                const Text("Calorie: 472 Protein: 20 Carbs: 58 Vitamin C: 7")));
+  }
+}
+
+class QuantityWidget extends StatefulWidget {
+  int index = 0;
+  QuantityWidget({int index = 0});
+  @override
+  State<StatefulWidget> createState() => QuantityWidgetState();
+}
+
+class QuantityWidgetState extends State<QuantityWidget> {
+  @override
+  var simpleIntInput = 0;
+  Widget build(BuildContext context) {
+    return Center(
+        child: Column(mainAxisSize: MainAxisSize.min, children: [
+      QuantityInput(
+          minValue: 0,
+          label: '',
+          value: simpleIntInput,
+          onChanged: (value) => setState(() {
+                simpleIntInput = int.parse(value.replaceAll(',', ''));
+                quantity[widget.index] = simpleIntInput;
+                print(widget.index);
+              })),
+    ]));
   }
 }
 
@@ -179,63 +247,63 @@ Widget _myListView(BuildContext context) {
     itemCount: _data.length,
     itemBuilder: (context, index) {
       return Row(children: <Widget>[
-        Padding(
-            padding: const EdgeInsets.all(5.0),
-            child: Text(
-              _data[index][0].toString(),
-            )),
-        Padding(
-            padding: const EdgeInsets.all(5.0),
-            child: Text(
-              _data[index][1].toString(),
-            )),
-        Padding(
-            padding: const EdgeInsets.all(5.0),
-            child: Text(
-              _data[index][2].toString(),
-            )),
-        Padding(
-            padding: const EdgeInsets.all(5.0),
-            child: Text(_data[index][3].toString())),
-        Padding(
-            padding: const EdgeInsets.all(5.0),
-            child: Text(_data[index][4].toString())),
-        Padding(
-            padding: const EdgeInsets.all(5.0),
-            child: Text(_data[index][5].toString())),
-        Padding(
-            padding: const EdgeInsets.all(5.0),
-            child: Text(_data[index][6].toString())),
-        Padding(
-            padding: const EdgeInsets.all(5.0),
-            child: Text(_data[index][7].toString())),
-        Padding(
-            padding: const EdgeInsets.all(5.0),
-            child: Text(_data[index][8].toString())),
-        Padding(padding: const EdgeInsets.all(5.0), child: QuantityWidget())
+        Expanded(
+          child: Padding(
+              padding: const EdgeInsets.all(0.0),
+              child: Text(
+                _data[index][1].toString(),
+              )),
+        ),
+        // Expanded(
+        //   child: Padding(
+        //       padding: const EdgeInsets.all(5.0),
+        //       child: Text(
+        //         _data[index][1].toString(),
+        //       )),
+        // ),
+        // Expanded(
+        //   child: Padding(
+        //       padding: const EdgeInsets.all(5.0),
+        //       child: Text(
+        //         _data[index][3].toString(),
+        //       )),
+        // ),
+        Expanded(
+          child: Padding(
+              padding: const EdgeInsets.all(0.0),
+              child: Text(_data[index][4].toString())),
+        ),
+        Expanded(
+          child: Padding(
+              padding: const EdgeInsets.all(0.0),
+              child: Text(_data[index][5].toString())),
+        ),
+        Expanded(
+          child: Padding(
+              padding: const EdgeInsets.all(0.0),
+              child: Text(_data[index][6].toString())),
+        ),
+        // Expanded(
+        //   child: Padding(
+        //       padding: const EdgeInsets.all(5.0),
+        //       child: Text(_data[index][6].toString())),
+        // ),
+        // Expanded(
+        //   child: Padding(
+        //       padding: const EdgeInsets.all(5.0),
+        //       child: Text(_data[index][7].toString())),
+        // ),
+        Expanded(
+          child: Padding(
+              padding: const EdgeInsets.all(0.0),
+              child: Text(_data[index][8].toString())),
+        ),
+        Expanded(
+            flex: 4,
+            child: Padding(
+                padding: const EdgeInsets.all(0.0),
+                child: QuantityWidget(index: index))),
       ]);
     },
   );
-}
-
-class QuantityWidget extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() => QuantityWidgetState();
-}
-
-class QuantityWidgetState extends State<QuantityWidget> {
-  @override
-  var simpleIntInput = 0;
-  Widget build(BuildContext context) {
-    return Center(
-        child: Column(mainAxisSize: MainAxisSize.min, children: [
-      QuantityInput(
-          minValue: 0,
-          label: '',
-          value: simpleIntInput,
-          onChanged: (value) => setState(() {
-                simpleIntInput = int.parse(value.replaceAll(',', ''));
-              })),
-    ]));
-  }
 }
