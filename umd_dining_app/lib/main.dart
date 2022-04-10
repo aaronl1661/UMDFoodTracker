@@ -1,34 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:quantity_input/quantity_input.dart';
+import 'package:csv/csv.dart';
+import 'dart:io';
 
 const primaryColor = Color.fromARGB(255, 212, 22, 22);
-List<Food> list1 = [
-  Food(1, "banana", "Macrussy"),
-  Food(2, "test1", "Macrussy"),
-  Food(3, "test2", "Macrussy"),
-  Food(4, "test3", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-  Food(5, "test4", "Macrussy"),
-];
+List<List<dynamic>> _data = [];
 int index = 0;
 void main() {
   runApp(MaterialApp(
@@ -40,11 +17,30 @@ void main() {
       ))));
 }
 
-class MainPage extends StatelessWidget {
+class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
 
   @override
+  State<MainPage> createState() => _MainPageState();
+}
+
+class _MainPageState extends State<MainPage> {
+  void _loadCSV() async {
+    final _rawData = await rootBundle.loadString("assets/Diner.csv");
+    List<List<dynamic>> _listData =
+        const CsvToListConverter().convert(_rawData);
+    setState(() {
+      _data = _listData;
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
+    _loadCSV();
+    while (_data == []) {
+      sleep(const Duration(seconds: 5));
+      print("loading....");
+    }
     return Scaffold(
         appBar: AppBar(
           title: const Text(
@@ -176,42 +172,46 @@ class _BodyLayoutState extends State<BodyLayout> {
   }
 }
 
-class Food {
-  int calorie = 0;
-  int quantity = 0;
-  String name = "";
-  String text = "";
-  Food(int calorie, String name, String text) {
-    this.calorie = calorie;
-    this.quantity = quantity;
-    this.name = name;
-    this.text = text;
-  }
-}
-
 Widget _myListView(BuildContext context) {
   // add another parameter as the dataset
   // backing data
-
   return ListView.builder(
-    itemCount: list1.length,
+    itemCount: _data.length,
     itemBuilder: (context, index) {
       return Row(children: <Widget>[
         Padding(
             padding: const EdgeInsets.all(5.0),
             child: Text(
-              list1[index].name,
+              _data[index][0].toString(),
             )),
         Padding(
             padding: const EdgeInsets.all(5.0),
             child: Text(
-              list1[index].calorie.toString(),
+              _data[index][1].toString(),
             )),
         Padding(
             padding: const EdgeInsets.all(5.0),
             child: Text(
-              list1[index].text,
+              _data[index][2].toString(),
             )),
+        Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Text(_data[index][3].toString())),
+        Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Text(_data[index][4].toString())),
+        Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Text(_data[index][5].toString())),
+        Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Text(_data[index][6].toString())),
+        Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Text(_data[index][7].toString())),
+        Padding(
+            padding: const EdgeInsets.all(5.0),
+            child: Text(_data[index][8].toString())),
         Padding(padding: const EdgeInsets.all(5.0), child: QuantityWidget())
       ]);
     },
@@ -230,10 +230,11 @@ class QuantityWidgetState extends State<QuantityWidget> {
     return Center(
         child: Column(mainAxisSize: MainAxisSize.min, children: [
       QuantityInput(
+          minValue: 0,
+          label: '',
           value: simpleIntInput,
           onChanged: (value) => setState(() {
                 simpleIntInput = int.parse(value.replaceAll(',', ''));
-                list1[index].quantity++;
               })),
     ]));
   }
