@@ -1,0 +1,254 @@
+,Food Name,Meal,Portion,Calories,Protein,Carbs,TransFat,Vitamin C,Sodium
+0,Cheddar Grilled Cheese Sandwich,Dinner,1 each,342,19,24,0,0,622
+1,Peaches in syrup,Dinner,2 oz,30,0,8,0,1,2
+2,Pear,Dinner,1 each,100,1,26,0,6,0
+3,Pears in syrup,Dinner,2 oz,28,0,7,0,0,2
+4,Peas,Dinner,1 oz,22,1,3,0,1,0
+5,Pineapple,Dinner,2 oz,39,0,10,0,15,0
+6,Plums,Dinner,1 each,30,0,8,0,2,0
+7,Pumpkin Seeds,Dinner,1 oz,145,4,12,0,0,0
+8,Ranch Dressing,Dinner,1 oz,140,0,2,0,1,190
+9,Raspberry Vinaigrette Lite,Dinner,1 oz,66,0,3,0,0,118
+10,Red Beans,Dinner,1 OZ,50,3,8,0,1,135
+11,Red Pepper,Dinner,1 oz,5,0,1,0,21,0
+12,Rice Noodle,Dinner,1 oz,101,1,23,0,0,10
+13,Sesame Oriental Dressing,Dinner,1 oz,90,0,12,0,0,320
+14,Shredded Carrots,Dinner,1 oz,11,0,2,0,1,19
+15,Sliced Black Olives,Dinner,1 oz,25,0,2,0,0,204
+16,Sliced Red Onion,Dinner,1 oz,11,0,2,0,2,1
+17,TOFU,Dinner,2 OZ,46,4,1,0,0,6
+18,Thousand Island Dressing,Dinner,1 oz,140,0,4,0,0,260
+19,Watermelon,Dinner,2 oz,16,0,4,0,3,0
+20,Yogurt,Dinner,2 oz,51,2,9,0,0,36
+21,Chicken Noodle Soup,Dinner,6 oz,200,10,27,0,3,1604
+22,Loaded Potato Soup,Dinner,6 oz,201,3,23,0,0,1046
+23,Vegan Quinoa Chili,Dinner,6 oz,0,0,0,0,0,0
+24,Peaches Whole,Dinner,1 each,38,0,9,0,6,0
+25,Basil & Pepper Gourmet Beans,Dinner,4 oz,150,7,20,0,29,53
+26,Orange,Dinner,1 each,103,1,24,0,101,0
+27,Lo Mien Noodles,Dinner,2 oz,8,0,0,0,0,1
+28,Chopped Kale,Dinner,2 oz,30,2,5,0,74,23
+29,Chopped Lettuce,Dinner,2 oz,6,0,2,0,1,6
+30,Chopped Romaine,Dinner,2 oz,9,0,1,0,13,4
+31,Corn Nuts,Dinner,1 oz,0,0,0,0,0,0
+32,Corn,Dinner,1 oz,31,0,6,0,1,0
+33,Cottage Cheese,Dinner,2 oz,40,5,3,0,0,160
+34,Cran Raisin,Dinner,1 oz,122,0,31,0,0,0
+35,Crouton,Dinner,1 oz,60,2,10,0,0,162
+36,Cucumber,Dinner,1 oz,2,0,0,0,1,0
+37,Diced Green Pepper,Dinner,1 oz,5,0,1,0,218,0
+38,Edamame,Dinner,1 oz,40,3,3,0,8,5
+39,Eggs,Dinner,2 oz,96,8,1,0,0,84
+40,Fajita Chicken Strips,Dinner,3 oz,137,19,3,0,0,644
+41,M&M Candy Cookie,Dinner,1 each,0,0,0,0,0,0
+42,French Dressing,Dinner,1 oz,120,0,5,0,0,250
+43,Fresh Blueberry,Dinner,2 oz,51,0,12,0,5,0
+44,Fresh Strawberry,Dinner,2 oz,8,0,1,0,15,0
+45,Garbanzo Beans,Dinner,1 oz,21,0,4,0,0,54
+46,Grapes,Dinner,2 oz,39,0,10,0,1,3
+47,Greek Pita Flat Bread,Dinner,1 each,246,8,41,0,0,442
+48,Hummus,Dinner,2 oz,141,2,8,0,0,243
+49,Lite Italian Dressing PC,Dinner,1 each,30,0,1,0,0,558
+50,Lite Ranch Dressing,Dinner,1 oz,75,0,1,0,0,236
+51,Mixed Greens,Dinner,2 OZ,30,0,0,0,20,0
+52,Breaded Chicken Cutlet,Dinner,1 each,259,19,21,0,0,473
+53,Chipotle Chicken Black Bean Quesadilla,Dinner,1 each,727,34,79,0,28,1982
+54,Kung Pao Tofu,Dinner,4 oz,256,11,15,0,1,250
+55,Roasted Button Mushrooms and Peppers,Dinner,4 oz,61,2,2,0,30,90
+56,Roasted Corn Black Beans and Tomatoes,Dinner,2 oz,37,1,6,0,5,107
+57,Roasted Italian Herb Cauliflower Kasha Grain,Dinner,2 oz,60,2,12,0,3,32
+58,Semolina Pasta Cooked,Dinner,4 oz,176,5,33,0,0,1
+59,Sesame Roasted Broccoli,Dinner,4 oz,58,3,7,0,101,175
+60,Spinach Chunky Tomato Lentils,Dinner,3 oz,107,7,18,0,4,63
+61,Avocado Pico de Gallo Egg Provolone Breakfast Sandwich,Dinner,1 each,341,15,12,0,13,711
+62,Bratwurst Egg Provolone Breakfast Sandwich,Dinner,1 each,510,27,2,0,0,1275
+63,Grilled Chicken Parmesan Sandwich,Dinner,1 each,545,37,61,0,9,2006
+64,"Tomato, Fresh Mozzarella and Basil Pesto Sandwich",Dinner,1 each,350,19,24,0,11,485
+65,Blackened Turkey Breast,Dinner,3 oz,142,20,1,0,20,585
+66,Baked Cheddar Green Chili Tomato Ziti,Dinner,6 oz,277,11,23,0,5,275
+67,Caprese Savory Bread Pudding,Dinner,4 oz,358,8,15,0,3,434
+68,Chicken Tetrazzini,Dinner,6 oz,290,17,27,0,1,416
+69,Five Cheese Al Forno Pasta with Mushrooms & Olives,Dinner,4 oz,180,8,24,0,8,696
+70,Italian sausage Roasted Red Pepper Pesto Alfredo,Dinner,4 OZ,196,6,19,0,2,311
+71,Parmesan Garlic Bread,Dinner,1 each,176,4,21,0,0,233
+72,Chicken Mushroom Pot Pie,Dinner,6 oz,289,18,20,0,2,441
+73,Italian Herb Crushed Red Pepper Broccoli,Dinner,4 oz,89,3,11,0,73,94
+74,Vegan Beef Strips,Dinner,3 oz,136,23,5,0,0,333
+75,Vegan Biscuit,Dinner,1 each,151,3,22,0,0,314
+76,Chocolate Chip Cookie,Dinner,1 each,187,1,25,0,0,257
+77,Chocolate Chocolate Chip Cookie,Dinner,1 each,205,1,25,0,0,103
+78,Mushroom Rice Pilaf,Dinner,3 oz,118,2,15,0,1,72
+79,Asian Garlic Noodles,Dinner,4 oz,375,8,54,0,0,567
+80,Thai Curry Catfish,Dinner,4 oz,101,12,3,0,1,164
+81,Shanghai Braised Pork,Dinner,4 oz,174,6,1,0,0,105
+82,Moroccan Roasted Potaoes,Dinner,4 oz,159,2,24,0,6,65
+83,Roasted Red Pepper Tarragon Lentils,Dinner,3 oz,127,9,22,0,6,80
+84,Squash BBQ,Dinner,3 oz,18,1,3,0,4,0
+85,Sticky Rice,Dinner,3 oz,112,2,24,0,0,1
+86,Sugar Snap Peas and Red Peppers,Dinner,3 oz,51,2,8,0,20,11
+87,Banana Peppers,Dinner,1 oz,4,0,0,0,28,377
+88,Bean Sprouts,Dinner,1 oz,1,0,0,0,3,0
+89,Chipotle Hummus,Dinner,1 oz,70,2,5,0,0,131
+90,Edamame Hummus,Dinner,1 oz,63,3,2,0,6,27
+91,Ezekiel Flax Bread,Dinner,2 each,0,0,0,0,0,0
+92,Ezekiel Organic Bread,Dinner,2 each,0,0,0,0,0,0
+93,Cantaloupe,Dinner,2 oz,21,0,5,0,20,8
+94,Ezekiel Sprouted Grain Tortilla,Dinner,1 each,0,0,0,0,0,0
+95,Sliced Jalapeno Peppers,Dinner,1 oz,3,0,0,0,6,105
+96,Sliced Roma Tomatoes,Dinner,2 oz,4,0,1,0,3,1
+97,"Spinach Tortilla 12""",Dinner,1 each,298,8,49,0,0,711
+98,"Tomato Tortilla 12""",Dinner,1 each,298,8,49,0,6,678
+99,Vegan Chipotle Mayonnaise,Dinner,1 oz,96,0,2,0,0,169
+100,Vegan Mayonnaise,Dinner,1 oz,101,0,2,0,0,172
+101,Vegan Shredded Cheddar Cheese,Dinner,1 oz,81,0,6,0,1,293
+102,Vegan Shredded Pepper Jack Cheese,Dinner,1 oz,85,0,5,0,0,255
+103,Vegan Sliced Gouda Cheese,Dinner,1 slice,85,0,5,0,0,255
+104,Vegan Sliced Provolone Cheese,Dinner,1 slice,59,0,3,0,0,178
+105,Penne with Lentil Ragout,Dinner,4 oz,141,7,27,0,7,52
+106,Guacamole,Dinner,1 oz,23,0,1,0,1,56
+107,Caesar Dressing,Dinner,1 oz,120,1,1,0,1,320
+108,Feta Cheese,Dinner,1 OZ,74,4,1,0,0,316
+109,Oatmeal Raisin Cookie,Dinner,1 each,177,2,25,0,0,98
+110,Broccoli,Dinner,1 oz,7,0,1,0,1,7
+111,Soy Butter Glazed Mushrooms,Dinner,3 oz,100,2,3,0,1,108
+112,Buttermilk Biscuit,Dinner,1 each,272,6,34,6,0,847
+113,Chef's Fresh Mashed Potatoes,Dinner,4 oz,135,2,18,0,5,30
+114,Chicken Gravy,Dinner,2 oz,23,0,4,0,0,39
+115,Collard Green with Smoked Turkey,Dinner,4 oz,67,7,10,0,24,61
+116,Cornbread Muffin,Dinner,1 each,191,2,33,0,0,393
+117,Fresh Roasted Carrots,Dinner,4 oz,51,1,9,0,68,328
+118,Fresh Steamed Broccoli,Dinner,4 oz,20,0,3,0,9,20
+119,Chicken Salad,Dinner,3 oz,194,7,6,0,0,469
+120,Five Cheese Macaroni Bake,Dinner,4 oz,263,12,19,0,0,438
+121,Green Peas and Pearl Onions,Dinner,3 oz,77,4,12,0,15,538
+122,Jerk Roasted Sweet Potatoes,Dinner,4 oz,93,1,21,0,3,136
+123,Roasted Brussels Sprouts Butternut Squash and Feta Cheese,Dinner,3 oz,79,2,12,0,5,178
+124,Sweet Corn Pudding,Dinner,3 oz,159,6,14,0,2,318
+125,Beef Burger,Dinner,1 each,222,15,0,0,0,467
+126,Cheddar Burger,Dinner,1 each,276,18,0,0,0,358
+127,Kale Apple Orange Smoothie,Dinner,4 oz,72,1,17,0,27,29
+128,Banana Coconut Yogurt Smoothie,Dinner,4 oz,109,2,18,0,3,31
+129,Yellow Mustard,Dinner,1/2 oz,14,0,0,0,0,170
+130,White Bread Sliced,Dinner,2 slices,90,0,11,0,0,95
+131,Ham Sliced,Dinner,3 oz,151,10,2,0,0,911
+132,Leaf Lettuce,Dinner,1/4 oz,17,1,3,0,20,31
+133,Mayonnaise,Dinner,1/2 oz,37,0,0,0,0,89
+134,Pickle Slice,Dinner,1 oz,5,0,1,0,0,335
+135,"Plain Tortilla 12""",Dinner,1 each,312,9,52,0,0,676
+136,Potato Chips,Dinner,2 oz,324,4,30,0,12,344
+137,Pretzels (bag),Dinner,2 oz,207,5,47,0,0,472
+138,Provolone Cheese Sliced,Dinner,1 each,75,5,0,0,0,182
+139,Grilled Basil Pesto Chicken Breast,Dinner,1 each,46,0,1,0,1,19
+140,Carrot Sticks,Dinner,1 oz,11,0,2,0,2,21
+141,Rye Bread,Dinner,2 slices,234,7,43,0,0,598
+142,Sliced Tomatoes,Dinner,2 each,6,0,1,0,4,0
+143,Swiss Cheese Sliced,Dinner,1 each,50,4,0,0,1,30
+144,Tuna Salad,Dinner,3 oz,255,7,4,0,0,620
+145,Turkey Sliced,Dinner,3 oz,75,13,1,0,0,683
+146,Wheat Bread Sliced,Dinner,2 slices,231,9,41,0,0,417
+147,American Cheese Sliced,Dinner,1 each,55,3,0,0,0,182
+148,"Wheat Tortilla 12""",Dinner,1 each,278,8,48,0,0,721
+149,Cheddar Cheese Sliced,Dinner,1 each,54,3,0,0,0,94
+150,Grilled Basil Pesto Chicken Breast w/ Provolone,Dinner,1 each,97,3,1,0,1,140
+151,Fresh Steamed Green Beans,Dinner,4 oz,28,1,7,0,5,34
+152,BBQ Sauce,Dinner,1 oz,56,0,14,0,1,364
+153,Shredded Cheddar Cheese,Dinner,1 oz,111,7,0,0,0,182
+154,Pico de Gallo,Dinner,1 oz,9,0,1,0,2,195
+155,Garlic Herb Roasted Yukon Gold Potatoes,Dinner,4 oz,162,2,25,0,7,144
+156,Cream of Tomato Soup,Dinner,6 oz,187,2,17,0,5,1123
+157,Sliced Mushroom,Dinner,1 oz,6,1,1,0,0,5
+158,Spinach,Dinner,2 oz,13,1,2,0,15,44
+159,Tomatoes Diced,Dinner,1 oz,5,0,1,0,3,0
+160,Cauliflower Chickpea Veggie Tots,Dinner,3 oz,151,3,21,0,9,201
+161,Cheese Pizza,Dinner,1 slice,190,13,16,0,5,659
+162,Italian Sausage Pizza,Dinner,1 slice,291,17,18,0,5,972
+163,Grilled Hot Dog,Dinner,1 each,168,9,0,0,0,826
+164,Pepperoni Pizza,Dinner,1 slice,220,14,16,0,5,758
+165,Apple,Dinner,1 each,74,0,19,0,2,0
+166,Baba Ghanoush,Dinner,2 oz,222,2,2,0,0,364
+167,Balsamic Dressing,Dinner,1 oz,56,0,3,0,0,179
+168,Banana,Dinner,1 each,109,1,28,0,10,1
+169,Beets,Dinner,1 oz,13,0,3,0,0,0
+170,Black Beans,Dinner,1 oz,28,1,3,0,0,85
+171,Blue Cheese Dressing,Dinner,1 oz,151,0,0,0,0,236
+172,Tuna Salad Cheddar Melt,Dinner,1 each,566,20,41,0,0,1216
+173,Smoked Pork Green Chili Salad,Dinner,3 oz,185,8,4,0,7,279
+174,Mediterranian Vegetable Melt,Dinner,1 each,380,13,47,0,242,744
+175,Vegetable Pizza,Dinner,1 slice,151,10,15,0,11,497
+176,Shredded Lettuce,Dinner,1 oz,4,0,0,0,6,2
+177,Celery Sticks,Dinner,1 oz,3,0,0,0,2,29
+178,Brown Rice,Dinner,4 oz,134,2,28,0,0,41
+179,Bacon Bits,Dinner,1 oz,127,11,0,0,0,603
+180,Tater Tots,Dinner,4 oz,70,0,8,0,0,148
+181,Spicy Brown Mustard,Dinner,1 oz,148,7,11,0,0,1
+182,Beef Chow Fun,Dinner,6 oz,430,6,30,0,8,109
+183,Diced Green Peppers,Dinner,1 oz,5,0,1,0,218,0
+184,Taco Shell,Dinner,1 each,51,0,6,0,0,0
+185,Tabasco Onions,Dinner,1 oz,80,2,17,0,3,30
+186,Potato Hamburger Roll,Dinner,1 each,134,4,26,0,0,245
+187,Carrot and Daikon Stir Fry,Dinner,3 oz,82,1,8,0,6,308
+188,Fried Jalapeno Peppers,Dinner,1 oz,15,1,3,0,6,105
+189,Dijon Mustard,Dinner,1 oz,29,0,0,0,0,711
+190,Potato Hot Dog Roll,Dinner,1 each,140,4,27,0,0,250
+191,Butter,Lunch,1 oz,202,0,0,0,0,0
+192,Maple Syrup,Lunch,1 oz,57,0,15,0,0,66
+193,"Buffalo Chicken, Grilled Onion, Tomato & Provolone Sandwich",Lunch,1 ea,700,44,70,0,5,2086
+194,Black Bean Basmati Cheddar Pico Wrap,Lunch,1 ea,427,14,60,0,8,542
+195,Vegan Cream Cheese,Lunch,1 oz,75,0,3,0,0,113
+196,Scrambled Cheesy Cheddar Egg,Lunch,4 1/2 oz,241,18,1,0,0,223
+197,Margarine,Lunch,1 oz,202,0,0,0,0,212
+198,Over Hard Fried Eggs,Lunch,1 ea,91,7,0,0,0,79
+199,Bacon,Lunch,2 ea,241,15,0,0,0,997
+200,Pancakes Blueberry,Lunch,1 ea,89,1,13,0,0,236
+201,Pancakes Chocolate Chips,Lunch,1 ea,89,1,13,0,0,236
+202,Southwestern Vegetable Hash,Lunch,3 oz,41,1,7,0,60,88
+203,Pancakes Plain,Lunch,1 ea,107,1,15,0,0,284
+204,Scrambled Eggs,Lunch,4 1/2 oz,215,16,1,0,0,181
+205,Biscuit,Lunch,1 ea,272,6,34,0,0,846
+206,Scrambled Egg Whites,Lunch,4 oz,72,12,1,0,0,192
+207,Grilled English Muffin,Lunch,1 each,136,3,24,0,0,198
+208,Hard Boiled Egg (Breakfast),Lunch,1 each,72,6,0,0,0,70
+209,Vegan Vanilla Soy Yogurt,Lunch,4 oz,0,0,0,0,0,0
+210,Breakfast Potatoes w/ Peppers & Onions,Lunch,4 oz,67,1,14,0,75,38
+211,Vegan Sour Cream,Lunch,1 oz,40,1,3,0,0,30
+212,Blueberry Yogurt,Lunch,3 oz,67,2,14,0,0,37
+213,Vegan Waffle French Toast,Lunch,1 each,808,21,135,0,0,1804
+214,Mixed Vegetables,Lunch,1 oz,22,0,3,0,1,4
+215,Lite Soy Sauce,Lunch,1 oz,19,1,1,0,0,1135
+216,Kimchi,Lunch,1 oz,6,0,1,0,3,324
+217,Italian Hummus,Lunch,1 OZ,45,1,3,0,0,54
+218,Italian Creamy,Lunch,1 oz,110,0,6,0,0,260
+219,Grits,Lunch,3 oz,60,1,13,0,0,1
+220,Diced Ham,Lunch,2 oz,101,6,1,0,0,607
+221,Oatmeal,Lunch,3 oz,340,11,61,0,0,3
+222,Grapefruit Half,Lunch,1 half,36,0,9,0,45,0
+223,Fried Shallot,Lunch,1 oz,17,0,4,0,1,2
+224,Egg Whites,Lunch,4 oz,56,12,1,0,0,192
+225,Liquid Eggs (Omelet Station),Lunch,4 oz,170,14,1,0,0,158
+226,Breakfast Pizza,Lunch,1 slice,620,23,16,0,0,801
+227,Chopped Green Onions,Lunch,1 oz,9,0,2,0,3,4
+228,Chicken Congee,Lunch,4 oz,214,8,35,0,0,615
+229,Cereal Granola,Lunch,5 oz,193,3,41,0,0,82
+230,Diced Onions,Lunch,1 oz,11,0,2,0,2,1
+231,Roasted Corn,Lunch,3 oz,129,3,26,0,5,46
+232,Sliced Lemons,Lunch,1 each,3,0,1,0,5,0
+233,Special K Berry,Lunch,5 oz,321,5,79,0,61,556
+234,Vegan Kung Pao Tofu,Lunch,4 oz,119,10,8,0,97,91
+235,Vegan Chicken Slider,Lunch,2 oz,109,8,9,0,0,199
+236,Vegan Blueberry Muffin,Lunch,1 each,281,4,42,0,0,221
+237,Cinnamon Apple French Toast Casserole,Lunch,4 oz,243,10,45,0,0,595
+238,Cheddar Green Chili Roasted Potatoes,Lunch,4 oz,110,1,16,0,53,135
+239,Cinnamon Scone,Lunch,1 each,431,8,50,0,0,471
+240,Whipped Cream,Lunch,1 oz,35,0,2,0,0,0
+241,Waffle,Lunch,7 oz,784,16,71,0,0,1342
+242,Strawberry Cream Cheese,Lunch,1 oz,99,7,4,0,1,78
+243,Plain Cream Cheese,Lunch,1 oz,101,9,1,0,0,96
+244,Donuts,Lunch,1 ea,728,10,92,0,0,258
+245,Cream Cheese Onion and Chive,Lunch,1 oz,92,8,1,0,0,85
+246,Bagels,Lunch,1 ea,294,10,60,0,0,376
+247,Yogurt Plain,Lunch,3 oz,77,3,14,0,0,54
+248,Mini Croissant,Lunch,1 each,123,2,14,0,33,135
+249,Vanilla Greek Yogurt,Lunch,4 oz,85,9,14,0,0,37
+250,Strawberry Yogurt,Lunch,3 oz,67,2,14,0,1,39
+251,Warm Cinnamon Berry Quinoa,Lunch,4 oz,122,3,25,0,6,15
+252,Strawberry Topping,Lunch,2 oz,94,0,20,0,9,7
